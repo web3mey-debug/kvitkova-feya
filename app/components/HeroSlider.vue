@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+const asset = useAsset()
 
 interface Slide { id: 'bouquet' | 'wedding' | 'box'; bg: string; art: string; to: string; to2: string }
 const slides = computed<Slide[]>(() => [
@@ -90,7 +91,7 @@ const petals = [
         </div>
         <div class="art order-1 mx-auto w-full max-w-[300px] sm:max-w-[380px] md:order-2 md:max-w-[500px]">
           <img
-            :src="s.art" width="1000" height="1000" alt=""
+            :src="asset(s.art)" width="1000" height="1000" alt=""
             :loading="i === 0 ? 'eager' : 'lazy'" :fetchpriority="i === 0 ? 'high' : 'auto'" decoding="async"
             class="aspect-square h-auto w-full select-none" draggable="false"
           >

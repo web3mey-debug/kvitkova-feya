@@ -3,6 +3,7 @@ import { occasionList } from '~/data/products'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+const asset = useAsset()
 
 useSeoMeta({
   title: () => t('seo.title'),
@@ -104,7 +105,7 @@ const faq = ['1', '2', '3', '4'] as const
       <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-12 px-4 py-20">
         <div class="min-w-0 flex-1 basis-[340px]" v-reveal="{ variant: 'left' }">
           <div class="mx-auto aspect-square max-w-[420px] overflow-hidden rounded-full bg-milk">
-            <img src="/slides/bouquet.svg" width="1000" height="1000" alt="" loading="lazy" decoding="async" class="size-full scale-110 object-cover">
+            <img :src="asset('/slides/bouquet.svg')" width="1000" height="1000" alt="" loading="lazy" decoding="async" class="size-full scale-110 object-cover">
           </div>
         </div>
         <div class="min-w-0 flex-1 basis-[400px]" v-reveal="{ variant: 'right' }">

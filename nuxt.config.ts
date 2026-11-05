@@ -1,6 +1,8 @@
 import tailwindcss from '@tailwindcss/vite'
 
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://kvitkova-feya.example'
+// На подпути (GitHub Pages: /kvitkova-feya/) robots.txt модуль генерировать не может
+const atRoot = !process.env.NUXT_APP_BASE_URL || process.env.NUXT_APP_BASE_URL === '/'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -40,6 +42,8 @@ export default defineNuxtConfig({
     format: ['avif', 'webp'],
     quality: 80
   },
+
+  robots: { robotsTxt: atRoot },
 
   schemaOrg: { identity: undefined },
 

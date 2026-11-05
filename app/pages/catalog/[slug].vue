@@ -4,6 +4,7 @@ import { products } from '~/data/products'
 const { t } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
+const asset = useAsset()
 
 const product = products.find((p) => p.slug === route.params.slug)
 if (!product) throw createError({ statusCode: 404, statusMessage: 'Not found', fatal: true })
@@ -16,12 +17,12 @@ useSeoMeta({
   description: () => t('seo.productDescription', { name: name.value }),
   ogTitle: () => t('seo.productTitle', { name: name.value }),
   ogDescription: () => t('seo.productDescription', { name: name.value }),
-  ogImage: product.art,
+  ogImage: asset(product.art),
   ogType: 'website'
 })
 
 useSchemaOrg([
-  defineProduct({ name: name.value, description: desc.value, image: product.art /* TODO: offers — когда появятся цены */ }),
+  defineProduct({ name: name.value, description: desc.value, image: asset(product.art) /* TODO: offers — когда появятся цены */ }),
   defineBreadcrumb({
     itemListElement: [
       { name: t('nav.home'), item: '/' },
@@ -49,7 +50,7 @@ const similar = products.filter((p) => p.slug !== product.slug).slice(0, 3)
     <div class="flex flex-wrap items-start gap-12">
       <div class="min-w-0 flex-1 basis-[440px]" v-reveal="{ variant: 'left' }">
         <div class="overflow-hidden rounded-[32px] bg-blush">
-          <img :src="product.art" width="800" height="1000" :alt="name" fetchpriority="high" decoding="async" class="aspect-[4/5] h-auto w-full object-cover">
+          <img :src="asset(product.art)" width="800" height="1000" :alt="name" fetchpriority="high" decoding="async" class="aspect-[4/5] h-auto w-full object-cover">
         </div>
       </div>
 

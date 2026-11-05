@@ -4,6 +4,7 @@ import type { Product } from '~/data/products'
 const props = defineProps<{ product: Product; eager?: boolean }>()
 const { t } = useI18n()
 const localePath = useLocalePath()
+const asset = useAsset()
 const to = computed(() => localePath(`/catalog/${props.product.slug}`))
 const name = computed(() => t(`products.items.${props.product.slug}.name`))
 </script>
@@ -12,7 +13,7 @@ const name = computed(() => t(`products.items.${props.product.slug}.name`))
   <article class="card-lift group overflow-hidden rounded-3xl border border-blush bg-white">
     <NuxtLink :to="to" class="zoom-img block overflow-hidden" :aria-label="name">
       <img
-        :src="product.art" width="800" height="1000" :alt="name"
+        :src="asset(product.art)" width="800" height="1000" :alt="name"
         :loading="eager ? 'eager' : 'lazy'" decoding="async" class="aspect-[4/5] h-auto w-full object-cover"
       >
     </NuxtLink>
