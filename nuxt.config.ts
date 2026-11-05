@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   schemaOrg: { identity: undefined },
 
   nitro: {
-    prerender: { crawlLinks: true, routes: ['/', '/en'] }
+    prerender: { crawlLinks: true, routes: ['/', '/en', '/studios', '/studios/kyiv', '/studios/boryspil', '/studios/shchaslyve'] }
   },
 
   app: {

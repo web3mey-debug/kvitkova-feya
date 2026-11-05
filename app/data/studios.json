@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "kyiv",
+    "instagram": "kvitkova_feya_kyiv",
+    "telegram": "kvitkovafeyakyiv",
+    "phone": null,
+    "address": null,
+    "hours": null
+  },
+  {
+    "slug": "boryspil",
+    "instagram": "kvitkova_feya_boryspil",
+    "telegram": "kvitkova_feya",
+    "phone": null,
+    "address": null,
+    "hours": null
+  },
+  {
+    "slug": "shchaslyve",
+    "instagram": "kvitkova_feya_shchaslyve",
+    "telegram": null,
+    "phone": null,
+    "address": null,
+    "hours": null
+  }
+]

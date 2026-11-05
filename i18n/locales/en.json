@@ -1,41 +1,130 @@
 {
-  "common": { "priceFrom": "from [price] UAH", "order": "Order", "details": "Details", "all": "All" },
-  "nav": { "home": "Home", "catalog": "Catalog", "occasions": "Occasions", "events": "Weddings & events", "delivery": "Delivery", "contacts": "Contacts", "menuOpen": "Open menu", "menuClose": "Close menu", "main": "Main menu", "skip": "Skip to content" },
+  "common": {
+    "priceFrom": "from [price] UAH",
+    "order": "Order",
+    "details": "Details",
+    "all": "All"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "occasions": "Occasions",
+    "events": "Weddings & events",
+    "delivery": "Delivery",
+    "contacts": "Contacts",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "main": "Main menu",
+    "skip": "Skip to content",
+    "studios": "Our studios"
+  },
   "slider": {
     "label": "Highlights",
     "prev": "Previous slide",
     "next": "Next slide",
     "goTo": "Slide {n}",
     "slides": {
-      "bouquet": { "eyebrow": "Floral studio", "title": "Bouquets that speak for you", "text": "Handcrafted bouquets from fresh flowers. A photo of your bouquet before it ships.", "cta": "Order a bouquet", "cta2": "Browse catalog" },
-      "wedding": { "eyebrow": "Weddings & events", "title": "Wedding florals made to your mood", "text": "Bridal bouquets, arches, table décor and photo zones. Free consultation with a florist.", "cta": "Plan your wedding", "cta2": "See our work" },
-      "box": { "eyebrow": "A gift that never misses", "title": "Flowers in boxes: soft and tidy", "text": "Arrangements in round boxes need no water and hold their shape for days.", "cta": "Choose a box", "cta2": "How to order" }
+      "bouquet": {
+        "eyebrow": "Floral studio",
+        "title": "Bouquets that speak for you",
+        "text": "Handcrafted bouquets from fresh flowers. A photo of your bouquet before it ships.",
+        "cta": "Order a bouquet",
+        "cta2": "Browse catalog"
+      },
+      "wedding": {
+        "eyebrow": "Weddings & events",
+        "title": "Wedding florals made to your mood",
+        "text": "Bridal bouquets, arches, table décor and photo zones. Free consultation with a florist.",
+        "cta": "Plan your wedding",
+        "cta2": "See our work"
+      },
+      "box": {
+        "eyebrow": "A gift that never misses",
+        "title": "Flowers in boxes: soft and tidy",
+        "text": "Arrangements in round boxes need no water and hold their shape for days.",
+        "cta": "Choose a box",
+        "cta2": "How to order"
+      }
     }
   },
-  "marquee": { "1": "Fresh flowers daily", "2": "Handcrafted bouquets", "3": "Photo before delivery", "4": "Wedding florals", "5": "Flower boxes", "6": "Delivery with care" },
+  "marquee": {
+    "1": "Fresh flowers daily",
+    "2": "Handcrafted bouquets",
+    "3": "Photo before delivery",
+    "4": "Wedding florals",
+    "5": "Flower boxes",
+    "6": "Delivery with care"
+  },
   "occasions": {
     "title": "Flowers for every occasion",
     "subtitle": "Pick an occasion — we will find the bouquet",
-    "items": { "birthday": "Birthday", "wedding": "Wedding", "march8": "March 8", "sorry": "Apology", "b2b": "For business", "box": "Flower boxes" }
+    "items": {
+      "birthday": "Birthday",
+      "wedding": "Wedding",
+      "march8": "March 8",
+      "sorry": "Apology",
+      "b2b": "For business",
+      "box": "Flower boxes"
+    }
   },
-  "catalog": { "title": "Bouquet catalog", "intro": "Handcrafted bouquets from Kvitkova Feya. Please confirm prices and availability when ordering.", "filters": "Filter by occasion", "empty": "Nothing here yet.", "popular": "Popular bouquets", "all": "Full catalog" },
-  "tags": { "hit": "Bestseller", "new": "New", "box": "Arrangement", "mono": "Mono bouquet", "dried": "Dried flowers", "wedding": "Wedding" },
+  "catalog": {
+    "title": "Bouquet catalog",
+    "intro": "Handcrafted bouquets from Kvitkova Feya. Please confirm prices and availability when ordering.",
+    "filters": "Filter by occasion",
+    "empty": "Nothing here yet.",
+    "popular": "Popular bouquets",
+    "all": "Full catalog"
+  },
+  "tags": {
+    "hit": "Bestseller",
+    "new": "New",
+    "box": "Arrangement",
+    "mono": "Mono bouquet",
+    "dried": "Dried flowers",
+    "wedding": "Wedding"
+  },
   "products": {
     "items": {
-      "nizhniy-ranok": { "name": "Gentle Morning", "desc": "[Bouquet description: mood, occasion, composition details.]" },
-      "pudrova-mriya": { "name": "Powder Dream", "desc": "[Bouquet description: mood, occasion, composition details.]" },
-      "sad-u-korobtsi": { "name": "Garden in a Box", "desc": "[Box arrangement description: box size, flowers, care.]" },
-      "mono-pivonii": { "name": "Mono Peonies", "desc": "[Mono bouquet description: variety, count, seasonality.]" },
-      "sukhotsvity": { "name": "Dried Flowers", "desc": "[Dried bouquet description: contents, shelf life.]" },
-      "vesilnyi": { "name": "Wedding Bouquet", "desc": "[Wedding bouquet description: style, flowers, accessories.]" }
+      "nizhniy-ranok": {
+        "name": "Gentle Morning",
+        "desc": "[Bouquet description: mood, occasion, composition details.]"
+      },
+      "pudrova-mriya": {
+        "name": "Powder Dream",
+        "desc": "[Bouquet description: mood, occasion, composition details.]"
+      },
+      "sad-u-korobtsi": {
+        "name": "Garden in a Box",
+        "desc": "[Box arrangement description: box size, flowers, care.]"
+      },
+      "mono-pivonii": {
+        "name": "Mono Peonies",
+        "desc": "[Mono bouquet description: variety, count, seasonality.]"
+      },
+      "sukhotsvity": {
+        "name": "Dried Flowers",
+        "desc": "[Dried bouquet description: contents, shelf life.]"
+      },
+      "vesilnyi": {
+        "name": "Wedding Bouquet",
+        "desc": "[Wedding bouquet description: style, flowers, accessories.]"
+      }
     }
   },
   "product": {
     "breadcrumb": "Breadcrumb",
     "size": "Size",
-    "sizeNote": { "S": "[Stems · height] — compact", "M": "[Stems · height] — classic", "L": "[Stems · height] — lush" },
+    "sizeNote": {
+      "S": "[Stems · height] — compact",
+      "M": "[Stems · height] — classic",
+      "L": "[Stems · height] — lush"
+    },
     "addons": "Add to your bouquet",
-    "addonItems": { "card": "Greeting card", "choco": "Chocolate", "balloons": "Balloons" },
+    "addonItems": {
+      "card": "Greeting card",
+      "choco": "Chocolate",
+      "balloons": "Balloons"
+    },
     "quickOrder": "Quick order",
     "orderFor": "Order · {price}",
     "price": "[price] UAH",
@@ -54,30 +143,74 @@
     "title": "Florist's choice",
     "text": "Tell us your budget and occasion — our florist will pick the freshest flowers of the day.",
     "budget": "Budget",
-    "budgets": { "1000": "up to 1,000 UAH", "1500": "up to 1,500 UAH", "2500": "up to 2,500 UAH", "4000": "from 4,000 UAH" }
+    "budgets": {
+      "1000": "up to 1,000 UAH",
+      "1500": "up to 1,500 UAH",
+      "2500": "up to 2,500 UAH",
+      "4000": "from 4,000 UAH"
+    }
   },
   "steps": {
     "title": "How to order",
     "items": {
-      "1": { "title": "Pick a bouquet", "text": "From the catalog, or let our florist choose within your budget." },
-      "2": { "title": "Send a request", "text": "Date, address, card text — we will contact you to confirm." },
-      "3": { "title": "Get the photo", "text": "We send a photo of the finished bouquet before it ships." }
+      "1": {
+        "title": "Pick a bouquet",
+        "text": "From the catalog, or let our florist choose within your budget."
+      },
+      "2": {
+        "title": "Send a request",
+        "text": "Date, address, card text — we will contact you to confirm."
+      },
+      "3": {
+        "title": "Get the photo",
+        "text": "We send a photo of the finished bouquet before it ships."
+      }
     }
   },
-  "about": { "title": "About the studio", "p1": "[Studio story: who founded it, what makes the approach special, where flowers come from.]", "p2": "[Philosophy: freshness, original composition, attention to wishes.]", "photo": "[Studio photo]" },
-  "reviews": { "title": "Customer reviews", "text": "[Customer review text]", "author": "[Name], [city]" },
+  "about": {
+    "title": "About the studio",
+    "p1": "[Studio story: who founded it, what makes the approach special, where flowers come from.]",
+    "p2": "[Philosophy: freshness, original composition, attention to wishes.]",
+    "photo": "[Studio photo]"
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "text": "[Customer review text]",
+    "author": "[Name], [city]"
+  },
   "info": {
-    "delivery": { "title": "Delivery", "text": "[Delivery zones and prices, timing, pickup.]" },
-    "payment": { "title": "Payment", "text": "[Payment methods: card, transfer, cash.]" },
-    "events": { "title": "Weddings & events", "text": "[Wedding, corporate and photo-zone décor.]" }
+    "delivery": {
+      "title": "Delivery",
+      "text": "[Delivery zones and prices, timing, pickup.]"
+    },
+    "payment": {
+      "title": "Payment",
+      "text": "[Payment methods: card, transfer, cash.]"
+    },
+    "events": {
+      "title": "Weddings & events",
+      "text": "[Wedding, corporate and photo-zone décor.]"
+    }
   },
   "faq": {
     "title": "FAQ",
     "items": {
-      "1": { "q": "How fast do you deliver?", "a": "[Answer]" },
-      "2": { "q": "Can I order anonymously?", "a": "[Answer]" },
-      "3": { "q": "Do you send a photo before delivery?", "a": "Yes, we send a photo of the finished bouquet before it ships." },
-      "4": { "q": "How do I keep my bouquet fresh longer?", "a": "[Answer]" }
+      "1": {
+        "q": "How fast do you deliver?",
+        "a": "[Answer]"
+      },
+      "2": {
+        "q": "Can I order anonymously?",
+        "a": "[Answer]"
+      },
+      "3": {
+        "q": "Do you send a photo before delivery?",
+        "a": "Yes, we send a photo of the finished bouquet before it ships."
+      },
+      "4": {
+        "q": "How do I keep my bouquet fresh longer?",
+        "a": "[Answer]"
+      }
     }
   },
   "form": {
@@ -93,14 +226,57 @@
     "errorPhone": "Enter a number like +380 XX XXX XX XX",
     "privacy": "By sending the request you agree to personal data processing."
   },
-  "footer": { "contacts": "Contacts", "write": "Message us", "rights": "All rights reserved", "tagline": "Floral studio", "phone": "[Phone]", "address": "[Address, city]", "hours": "[Opening hours]" },
-  "fab": { "telegram": "Message on Telegram", "call": "Call us" },
+  "footer": {
+    "contacts": "Contacts",
+    "write": "Message us",
+    "rights": "All rights reserved",
+    "tagline": "Floral studio",
+    "phone": "[Phone]",
+    "address": "[Address, city]",
+    "hours": "[Opening hours]"
+  },
+  "fab": {
+    "telegram": "Message on Telegram",
+    "call": "Call us"
+  },
   "seo": {
     "title": "Kvitkova Feya — floral studio",
     "description": "Handcrafted bouquets, flower boxes and wedding florals. Order flowers with delivery — photo of your bouquet before it ships.",
     "catalogTitle": "Bouquet catalog — Kvitkova Feya",
     "catalogDescription": "Handcrafted bouquets, mono bouquets, flower boxes, dried flowers and wedding florals from Kvitkova Feya.",
     "productTitle": "{name} — bouquet | Kvitkova Feya",
-    "productDescription": "“{name}” bouquet from Kvitkova Feya floral studio. Photo of your bouquet before it ships."
+    "productDescription": "“{name}” bouquet from Kvitkova Feya floral studio. Photo of your bouquet before it ships.",
+    "studiosTitle": "Our studios — Kyiv, Boryspil, Shchaslyve | Kvitkova Feya",
+    "studiosDescription": "Kvitkova Feya floral studios in Kyiv, Boryspil and Shchaslyve: contacts, news and social media.",
+    "studioTitle": "Flowers in {cityIn} — Kvitkova Feya studio",
+    "studioDescription": "Kvitkova Feya floral studio — {city}: bouquets, arrangements and event florals. Contacts, news and social media."
+  },
+  "studios": {
+    "title": "Our studios",
+    "intro": "Three Kvitkova Feya studios: Kyiv, Boryspil and Shchaslyve. Pick the closest — contacts, news and social media.",
+    "eyebrow": "Floral studio",
+    "studioIn": "Studio in {cityIn}",
+    "cities": {
+      "kyiv": "Kyiv",
+      "boryspil": "Boryspil",
+      "shchaslyve": "Shchaslyve"
+    },
+    "phone": "Phone",
+    "address": "Address",
+    "hours": "Opening hours",
+    "tbd": "[to be confirmed]",
+    "map": "Show on map",
+    "mapQuery": "Kvitkova Feya",
+    "telegramTitle": "News from Telegram",
+    "instagramTitle": "Instagram",
+    "followTg": "Follow on Telegram",
+    "openPost": "Read on Telegram →",
+    "feedEmpty": "Fresh posts will appear here after the next update. All news is in the studio's Telegram channel.",
+    "instagramEmpty": "Instagram photos coming soon. Find us on Instagram via the link above.",
+    "citiesIn": {
+      "kyiv": "Kyiv",
+      "boryspil": "Boryspil",
+      "shchaslyve": "Shchaslyve"
+    }
   }
 }

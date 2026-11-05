@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { occasionList } from '~/data/products'
+import { studios } from '~/data/studios'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -128,6 +129,13 @@ const faq = ['1', '2', '3', '4'] as const
           </figure>
         </li>
       </ul>
+    </section>
+
+    <!-- Наші студії -->
+    <section id="studios" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="mb-3 text-center text-4xl md:text-5xl" v-reveal>{{ t('studios.title') }}</h2>
+      <p class="mx-auto mb-10 max-w-xl text-center text-muted" v-reveal="{ delay: 80 }">{{ t('studios.intro') }}</p>
+      <StudioCards :studios="studios" />
     </section>
 
     <!-- Доставка / оплата / события -->

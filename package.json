@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "sync:telegram": "node tools/sync-telegram.mjs",
+    "test:telegram": "node tools/test-parse-telegram.mjs"
   },
   "dependencies": {
     "@fontsource-variable/manrope": "^5.3.0",
@@ -22,5 +24,8 @@
     "tailwindcss": "^4.3.4",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "node-html-parser": "^9.0.6"
   }
 }

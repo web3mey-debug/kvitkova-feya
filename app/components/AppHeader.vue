@@ -31,6 +31,7 @@ const home = (hash: string) => ({ path: localePath('/'), hash })
 const links = computed(() => [
   { key: 'catalog', to: localePath('/catalog') },
   { key: 'occasions', to: home('#occasions') },
+  { key: 'studios', to: localePath('/studios') },
   { key: 'events', to: home('#events') },
   { key: 'delivery', to: home('#delivery') },
   { key: 'contacts', to: home('#contacts') }

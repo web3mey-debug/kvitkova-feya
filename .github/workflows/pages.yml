@@ -4,6 +4,8 @@ on:
   push:
     branches: [main, feat/nuxt-scaffold]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *' # раз в 6 часов: подтянуть свежие посты из Telegram
 
 permissions:
   contents: read
@@ -24,6 +26,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Sync Telegram channels (ошибка сети не роняет сборку)
+        run: node tools/sync-telegram.mjs
+        continue-on-error: true
       - name: Build static site
         run: npm run generate
         env:

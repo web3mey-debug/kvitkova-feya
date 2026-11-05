@@ -31,3 +31,9 @@ npm run generate  # статична збірка в .output/public
 Репозиторий можно подключить к хостингу без доп. настроек в коде:
 - **Netlify:** Add new site → Import from Git → выбрать репозиторий. Настройки возьмутся из `netlify.toml`. Каждая ветка и PR получают свой адрес превью.
 - **Cloudflare Pages:** Build command `npm run generate`, output directory `.output/public`, переменная `NODE_VERSION=22`.
+
+## Студії та соцмережі
+- Список студій, ніки Instagram/Telegram і контакти: `app/data/studios.json` (телефон/адресу/графік можна вписати вручну — вони мають пріоритет над даними з Telegram).
+- **Telegram** (автоматично): `npm run sync:telegram` читає публічні веб-версії каналів `t.me/s/<канал>`, пише `app/data/social/<студія>.telegram.json` і завантажує фото в `public/social/tg/`. У GitHub Actions синк запускається перед кожною збіркою і за розкладом (кожні 6 годин). Помилка мережі не ламає збірку — залишаються попередні дані. Перевірка парсера: `npm run test:telegram`.
+- **Instagram** (вручну): фото додаються у `app/data/instagram.json` (`studio`, `image`, `caption`, `url`). Автоматичний парсинг Instagram не використовується: це порушує правила сервісу і ненадійно; офіційний варіант — Instagram API з токеном власника акаунта.
+- Сторінки: `/studios`, `/studios/kyiv`, `/studios/boryspil`, `/studios/shchaslyve`.
