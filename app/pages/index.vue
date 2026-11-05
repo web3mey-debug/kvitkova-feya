@@ -46,11 +46,7 @@ const faq = ['1', '2', '3', '4'] as const
             :to="{ path: localePath('/catalog'), query: { occasion: o } }"
             class="card-lift group flex h-full flex-col items-center justify-center gap-4 rounded-[28px] border border-blush bg-white px-4 py-9 text-center font-display text-xl sm:text-2xl"
           >
-            <svg class="text-blush-deep transition-transform duration-700 group-hover:rotate-[72deg] group-hover:scale-110" width="44" height="44" viewBox="0 0 44 44" fill="currentColor" aria-hidden="true">
-              <ellipse cx="22" cy="10" rx="5.5" ry="9" /><ellipse cx="22" cy="34" rx="5.5" ry="9" />
-              <ellipse cx="10" cy="22" rx="9" ry="5.5" /><ellipse cx="34" cy="22" rx="9" ry="5.5" opacity=".7" />
-              <circle cx="22" cy="22" r="4" fill="#2B2B2B" />
-            </svg>
+            <FlowerIcon :size="48" class="text-blush-deep transition-transform duration-700 group-hover:rotate-[72deg] group-hover:scale-110" />
             {{ t(`occasions.items.${o}`) }}
           </NuxtLink>
         </li>

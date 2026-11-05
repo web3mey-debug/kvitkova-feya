@@ -10,11 +10,7 @@ const localePath = useLocalePath()
   <ul class="grid gap-6 md:grid-cols-3">
     <li v-for="(s, i) in studios" :key="s.slug" v-reveal="{ delay: i * 120 }">
       <article class="card-lift relative flex h-full flex-col rounded-3xl border border-blush bg-white p-7">
-        <svg class="mb-4 text-blush-deep" width="40" height="40" viewBox="0 0 44 44" fill="currentColor" aria-hidden="true">
-          <ellipse cx="22" cy="10" rx="5.5" ry="9" /><ellipse cx="22" cy="34" rx="5.5" ry="9" />
-          <ellipse cx="10" cy="22" rx="9" ry="5.5" /><ellipse cx="34" cy="22" rx="9" ry="5.5" opacity=".7" />
-          <circle cx="22" cy="22" r="4" fill="#2B2B2B" />
-        </svg>
+        <FlowerIcon :size="44" class="mb-4 text-blush-deep" />
         <h3 class="mb-3 text-3xl">
           <NuxtLink :to="localePath(`/studios/${s.slug}`)" class="after:absolute after:inset-0">{{ t(`studios.cities.${s.slug}`) }}</NuxtLink>
         </h3>
