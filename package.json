@@ -1,0 +1,26 @@
+{
+  "name": "kvitkova-feya",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@nuxt/image": "^2.2.1",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/robots": "^7.0.2",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "@tailwindcss/vite": "^4.3.4",
+    "nuxt": "^4.6.4",
+    "nuxt-schema-org": "^7.0.1",
+    "tailwindcss": "^4.3.4",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0"
+  }
+}

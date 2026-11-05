@@ -1,0 +1,19 @@
+{
+  "nav": { "catalog": "Catalog", "events": "Events & weddings", "delivery": "Delivery", "contacts": "Contacts" },
+  "hero": {
+    "eyebrow": "Floral studio",
+    "title": "Bouquets that speak for you",
+    "text": "Handcrafted bouquets and event florals. Fresh flowers, with a photo of your bouquet before it ships.",
+    "cta": "Order a bouquet",
+    "cta2": "Browse catalog"
+  },
+  "occasions": {
+    "title": "Flowers for every occasion",
+    "items": { "birthday": "Birthday", "wedding": "Wedding", "march8": "March 8", "sorry": "Apology", "b2b": "For business", "box": "Flower boxes" }
+  },
+  "seo": {
+    "title": "Kvitkova Feya — floral studio",
+    "description": "Handcrafted bouquets, flower boxes and wedding florals. Order flowers with delivery — photo of your bouquet before it ships."
+  },
+  "footer": { "rights": "All rights reserved" }
+}

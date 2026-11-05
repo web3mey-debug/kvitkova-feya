@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "@fontsource/cormorant-garamond/cyrillic-500.css";
+@import "@fontsource/cormorant-garamond/cyrillic-600.css";
+@import "@fontsource/cormorant-garamond/latin-500.css";
+@import "@fontsource/cormorant-garamond/latin-600.css";
+@import "@fontsource-variable/manrope/index.css";
+
+/* Дизайн-токены бренда «Квіткова Фея» (из логотипа) */
+@theme {
+  --color-blush: #f4cdd6;
+  --color-blush-deep: #e9a9b8;
+  --color-milk: #fff8f6;
+  --color-graphite: #2b2b2b;
+  --color-sage: #9db09a;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope Variable", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-milk);
+  color: var(--color-graphite);
+  font-family: var(--font-sans);
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: .01em; }
+.eyebrow { letter-spacing: .4em; text-transform: uppercase; font-size: .75rem; }
+
+:focus-visible { outline: 2px solid var(--color-graphite); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
