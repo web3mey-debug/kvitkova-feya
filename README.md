@@ -2,7 +2,7 @@
 
 Промо-сайт на **Nuxt 4** (статична генерація) + Tailwind CSS 4. Українська (основна) та англійська версії.
 
-- ТЗ: [`docs/TZ.md`](docs/TZ.md)
+- Документы: ТЗ — [`docs/TZ.md`](docs/TZ.md), статус и план работ — [`docs/PLAN.md`](docs/PLAN.md)
 - Дизайн-токени: `app/assets/css/main.css` (`@theme`)
 - Тексти: `i18n/locales/*.json`
 
