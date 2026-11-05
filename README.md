@@ -26,3 +26,8 @@ npm run generate  # статична збірка в .output/public
 - Отправка заявок: сейчас `LeadForm.vue` — заглушка без сетевого запроса (Telegram-бот / email / CRM).
 - Ссылки мессенджеров и соцсетей, настоящий домен в `NUXT_PUBLIC_SITE_URL`.
 - Разметка `FAQPage` — после написания ответов.
+
+## Публичное превью (Netlify / Cloudflare Pages)
+Репозиторий можно подключить к хостингу без доп. настроек в коде:
+- **Netlify:** Add new site → Import from Git → выбрать репозиторий. Настройки возьмутся из `netlify.toml`. Каждая ветка и PR получают свой адрес превью.
+- **Cloudflare Pages:** Build command `npm run generate`, output directory `.output/public`, переменная `NODE_VERSION=22`.
